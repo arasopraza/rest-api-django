@@ -21,12 +21,13 @@ DATABASE_PASSWORD=mysecretpassword
 DATABASE_HOST=127.0.0.1
 DATABASE_PORT=5432
 ```
-
 Then, run the migrations with this command.
 ```
 python manage.py migrate
 ```
-You can start the server, to start up Django's development server, run this command.
+In this project, we have several branch. You must checkout to one branch except master. For example, checkout to branch with-view-set.
+
+After checkout, you can start the server, to start up Django's development server, run this command.
 ```
 python manage.py runserver
 ```
