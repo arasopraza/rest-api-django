@@ -13,7 +13,23 @@ pipenv shell
 pipenv install
 ```
 ## Use
-To start up Django's development server, run this command.
+First, add env for your database.
+```
+DATABASE_NAME=postgres
+DATABASE_USER=postgres
+DATABASE_PASSWORD=mysecretpassword
+DATABASE_HOST=127.0.0.1
+DATABASE_PORT=5432
+```
+
+Then, run the migrations with this command.
+```
+python manage.py migrate
+```
+You can start the server, to start up Django's development server, run this command.
 ```
 python manage.py runserver
 ```
+In default, server port will be 8000. So, you can access:
+* http://127.0.0.1:8000/api/products/ for list all products
+* http://127.0.0.1:8000/api/products/<id product> for access the product detail
