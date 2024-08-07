@@ -1,7 +1,7 @@
 # REST API CRUD with Django
 
 ## Requirements
-* Python3
+* Python3.10
 * Pip v.24.1.2
 * Pipenv
 * Django v.5.0.7
